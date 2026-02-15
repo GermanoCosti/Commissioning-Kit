@@ -6,4 +6,4 @@ dist/
 *.sqlite
 *.db
 _export/
-
+*.egg-info/

@@ -1,3 +1,0 @@
-[console_scripts]
-meccatronica-io = meccatronica_io.cli:main
-meccatronica-io-gui = meccatronica_io.gui:main
