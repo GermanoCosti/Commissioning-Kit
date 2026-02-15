@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meccatronica-io-suite-germanocosti"
+version = "0.1.0"
+description = "Suite Windows per import lista segnali (CSV/XLSX) e export (TIA/Beckhoff/Rockwell/CoDeSys/CSV)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Germano Costi" }]
+dependencies = [
+  "openpyxl>=3.1.5",
+]
+
+[project.scripts]
+meccatronica-io = "meccatronica_io.cli:main"
+meccatronica-io-gui = "meccatronica_io.gui:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
